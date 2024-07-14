@@ -8,6 +8,7 @@ link () {
 	src=$1
 	dst=$2
 	dir=$(dirname $dst)
+	echo "linking $src"
 
 	if test -f "$dst"; then
 		echo "$dst already exists. [r]eplace, [s]kip or [a]bort?"
@@ -35,7 +36,6 @@ link () {
 		esac
 	fi
 
-	echo "linking to $dst"
 	mkdir -p $dir
 	ln -s "$src" "$dst"
 }
