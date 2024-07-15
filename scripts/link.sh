@@ -8,9 +8,8 @@ link () {
 	src=$1
 	dst=$2
 	dir=$(dirname $dst)
-	echo "linking $src"
 
-	if test -f "$dst"; then
+	if test -e "$dst"; then
 		echo "$dst already exists. [r]eplace, [s]kip or [a]bort?"
 		read -n 1 choice < /dev/tty
 		echo ""
