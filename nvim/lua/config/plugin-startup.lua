@@ -36,3 +36,12 @@ require("nvim-treesitter.configs").setup({
     additional_vim_regex_highlighting = false,
   },
 })
+
+require("telescope").setup({
+	pickers = {
+		find_files = { hidden = true }
+	},
+	defaults = {
+		file_ignore_patterns = {"^.git/"}
+	}
+})
