@@ -13,3 +13,7 @@ vim.o.termguicolors = true
 
 -- plugin setup
 require("gitsigns").setup()
+
+require("lualine").setup {
+	options = {theme = "auto"}
+}
