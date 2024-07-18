@@ -45,3 +45,5 @@ require("telescope").setup({
 		file_ignore_patterns = {"^.git/"}
 	}
 })
+
+require("colorizer").setup()

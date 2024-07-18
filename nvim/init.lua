@@ -1,9 +1,5 @@
 require("config.lazy")
 
-require("config.lsp")
-require("config.autocomplete")
-require("config.plugin-startup")
-
 -- theme
 vim.cmd "colorscheme catppuccin"
 
@@ -16,6 +12,12 @@ vim.o.cursorline = true
 vim.o.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
 vim.g.mapleader = " "
+vim.opt.termguicolors = true
+
+-- plugins
+require("config.lsp")
+require("config.autocomplete")
+require("config.plugin-startup")
 
 -- keybinds
 local telescope_builtin = require('telescope.builtin')
