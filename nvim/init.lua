@@ -1,7 +1,7 @@
 require("config.lazy")
 
 -- theme
-vim.cmd "colorscheme catppuccin"
+vim.cmd "colorscheme catppuccin-frappe"
 
 -- options
 vim.o.number = true
