@@ -7,7 +7,8 @@ require("mason-lspconfig").setup({
 		"rust_analyzer",
 		"cssls",
 		"css_variables",
-		"pylsp"
+		"pylsp",
+		"clangd"
 	}
 })
 require("lspconfig").lua_ls.setup({})
@@ -20,3 +21,4 @@ require('lspconfig')['rust_analyzer'].setup {capabilities = capabilities}
 require('lspconfig')['cssls'].setup {capabilities = capabilities}
 require('lspconfig')['css_variables'].setup {capabilities = capabilities}
 require('lspconfig')['pylsp'].setup {capabilities = capabilities}
+require('lspconfig')['clangd'].setup {capabilities = capabilities}
