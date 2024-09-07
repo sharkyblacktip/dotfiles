@@ -8,17 +8,21 @@ require("mason-lspconfig").setup({
 		"cssls",
 		"css_variables",
 		"pylsp",
-		"clangd"
+		"clangd",
+		"eslint"
 	}
 })
 require("lspconfig").lua_ls.setup({})
 
 -- setup autocomplete with the language servers
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require('lspconfig')['lua_ls'].setup {capabilities = capabilities}
-require('lspconfig')['html'].setup {capabilities = capabilities}
-require('lspconfig')['rust_analyzer'].setup {capabilities = capabilities}
-require('lspconfig')['cssls'].setup {capabilities = capabilities}
-require('lspconfig')['css_variables'].setup {capabilities = capabilities}
-require('lspconfig')['pylsp'].setup {capabilities = capabilities}
-require('lspconfig')['clangd'].setup {capabilities = capabilities}
+local lspconfig = require('lspconfig')
+lspconfig['lua_ls'].setup {capabilities = capabilities}
+lspconfig['html'].setup {capabilities = capabilities}
+lspconfig['rust_analyzer'].setup {capabilities = capabilities}
+lspconfig['cssls'].setup {capabilities = capabilities}
+lspconfig['css_variables'].setup {capabilities = capabilities}
+lspconfig['pylsp'].setup {capabilities = capabilities}
+lspconfig['clangd'].setup {capabilities = capabilities}
+lspconfig['eslint'].setup {}
+
