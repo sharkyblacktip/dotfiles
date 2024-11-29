@@ -10,14 +10,14 @@ link () {
 	dir=$(dirname $dst)
 
 	if test -e "$dst"; then
-		echo "$dst already exists. [r]eplace, [s]kip or [a]bort?"
+		echo "$dst already exists. [r]eplace, [S]kip or [a]bort? "
 		read -n 1 choice < /dev/tty
 		echo ""
 
 		case "$choice" in
 			r )
 				# replace
-				rm -f "$dst"
+				rm -rf "$dst"
 				;;
 			s )
 				# skip

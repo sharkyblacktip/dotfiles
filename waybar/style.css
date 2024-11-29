@@ -1,0 +1,84 @@
+@define-color nord0 #2e3440;
+@define-color nord1 #3b4252;
+@define-color nord2 #434c5e;
+@define-color nord3 #4c566a;
+@define-color nord6 #eceff4;
+@define-color nord10 #5e81ac;
+@define-color nord11 #bf616a;
+@define-color nord12 #d08770;
+@define-color nord13 #ebcb8b;
+@define-color nord14 #a3be8c;
+
+/* Reset all styles */
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	text-shadow: none;
+	icon-shadow: none;
+}
+
+#waybar {
+  font-family: Symbols Nerd Font, SFMono Nerd Font Mono;
+  font-weight: 600;
+  font-size: 14px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: black;
+  min-height: 1rem;
+  color: white;
+}
+
+.modules-right, .modules-center, .modules-left {
+	background-color: black;
+	padding: 0 1rem;
+	border-radius: 0 0 8px 8px;
+}
+
+.modules-right {
+	margin-right: 2rem;
+}
+
+.modules-left {
+	margin-left: 2rem;
+}
+
+#workspaces button {
+  padding: 0 4px;
+  margin: 4px 0;
+  margin-left: 4px;
+  color: white;
+}
+
+#workspaces button.active {
+  color: @nord3;
+}
+
+#workspaces button.urgent {
+  color: @nord11;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris,
+#custom-distro,
+#custom-layout {
+  padding: 0 .6rem;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+tooltip {
+  background-color: black;
+}
