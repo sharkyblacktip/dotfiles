@@ -240,7 +240,7 @@
     "modules-center": ["custom/waybar-media"],
     "custom/waybar-media": {
         "return-type": "json",
-        "exec": "waybar-media.py status",
+        "exec": "python3 ~/Scripts/waybar-media.py status",
         "on-click": "waybar-media.py playpause",
         "on-scroll-up": "waybar-media.py previous",
         "on-scroll-down": "waybar-media.py next",

@@ -60,17 +60,17 @@
 
     // Modules Right    
     "modules-right": [
-    //  "custom/waybar-media",
-        "custom/playerprevious",
-        "custom/playerpause",
-        "custom/playernext",
+	//"custom/waybar-media",
+        //"custom/playerprevious",
+        //"custom/playerpause",
+        //"custom/playernext",
         "pulseaudio",
     //  "bluetooth",
         "network",
-    //  "group/hardware",
+	//"group/hardware",
         "cpu",
         "memory",
-    // "custom/wallpaper",
+	//"custom/wallpaper",
         "tray",
         "custom/exit"
     // "custom/ml4w-welcome",
